@@ -1,0 +1,42 @@
+.btn-primary {
+  background-color: #4B0082;
+  color:aliceblue;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #8325c6;
+  color:aliceblue;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  color:#1a1a1a;
+  /* border: 1px solid #1a1a1a; */
+}
+
+.btn-secondary {
+  background-color: #1a1a1a;
+  color:aliceblue;
+  border: none;
+}
+
+.badge-selected {
+  background-color: #4B0082;
+  color: aliceblue;
+  border: none;
+}
+
+span.badge {
+  background-color: #1a1a1a;
+  color: aliceblue;
+  border: none;
+}
+
+
+
+
+.progress-bar{
+  background-color: #4B0082;
+}

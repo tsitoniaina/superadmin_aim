@@ -1,0 +1,48 @@
+/* src/assets/css/Matrix.css */
+
+.matrix {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: none; /* Prend toute la largeur */
+    position: relative; /* Pour positionner le bandeau de niveau */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .matrix:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .matrix h3 {
+    text-align: center;
+    color: #4A90E2;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  /* Bandeau de niveau à gauche de la matrice */
+  .level-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50px; /* Largeur ajustée pour mieux afficher les niveaux */
+    background-color: #4A90E2; /* Couleur du bandeau, à ajuster selon le niveau */
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    writing-mode: vertical-rl; /* Texte vertical */
+    text-orientation: mixed;
+    font-size: 14px;
+  }
+  /* src/assets/css/MatrixContainer.css */
+  
+   
+  

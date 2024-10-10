@@ -1,0 +1,190 @@
+/* src/assets/css/MatrixNode.css */
+
+/* Conteneur pour chaque nœud et ses enfants */
+
+.matrix-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Le nœud lui-même */
+  .matrix-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 7px;
+    border: 2px solid #E0E0E0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+    position: relative;
+    width: 220px; /* Largeur fixe */
+    height: 35px; /* Hauteur fixe */
+    box-sizing: border-box;
+    overflow: hidden; /* Empêche le débordement du contenu */
+    flex-shrink: 0; /* Empêche le nœud de rétrécir */
+  }
+  
+  /* Couleurs pastel par niveau */
+  .matrix-item.level-1 {
+    background-color: #FFE0B2; /* Pastel orange */
+  }
+  
+  .matrix-item.level-2 {
+    background-color: #C8E6C9; /* Pastel vert */
+  }
+  
+  .matrix-item.level-3 {
+    background-color: #BBDEFB; /* Pastel bleu */
+  }
+  
+  .matrix-item.level-4 {
+    background-color: #D1C4E9; /* Pastel violet */
+  }
+  
+  .matrix-item.level-5 {
+    background-color: #F8BBD0; /* Pastel rose */
+  }
+  
+  /* Nœuds vides hériteront de la couleur de leur niveau */
+  .matrix-item.empty {
+    border: 2px dashed black; /* Bordure en pointillé noir */
+    cursor: default;
+    /* Ne pas définir background-color ici pour hériter de .level-n */
+  }
+  
+  /* Animation de clignotement pour les nouveaux nœuds */
+  .matrix-item.blink {
+    animation: blink 2s infinite;
+  }
+  
+  /* Effets au survol pour les nœuds non vides */
+  .matrix-item:hover:not(.empty) {
+    background-color: #F5F5F5;
+    border-color: #4A90E2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ajoute de l'espace entre l'email et le niveau */
+    width: 100%; /* Prend toute la largeur disponible */
+  }
+
+  
+  .user-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #333333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .user-info p.shrink-text {
+    font-size: 12px;
+    color: #555555;
+  }
+  
+/* Badge GMD */
+.gmd-flag {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: #4A90E2;
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-left: 10px; /* Ajoute un espace entre l'email et le niveau */
+}
+  
+  /* Bouton pour ajouter un filleul */
+  .add-filleul-button {
+    background-color: #50E3C2;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .add-filleul-button:hover {
+    background-color: #3AC0A2;
+    transform: scale(1.1);
+  }
+  
+  /* Bouton pour étendre/réduire les enfants */
+  .toggle-button {
+    margin-left: auto; /* Place la flèche complètement à droite */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #4A90E2;
+  }
+  
+  .toggle-button:hover {
+    transform: rotate(90deg);
+  }
+  
+  /* Conteneur pour les enfants */
+  .matrix-children {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 15px; /* Espacement entre les enfants */
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Animation de clignotement */
+  @keyframes blink {
+    0% { background-color: #FFEB3B; }
+    50% { background-color: #FFFFFF; }
+    100% { background-color: #FFEB3B; }
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    .matrix-item {
+      width: 150px; /* Réduction de la largeur sur petits écrans */
+      padding: 8px 12px;
+      height: 50px; /* Hauteur fixe */
+    }
+  
+    .matrix-children {
+      gap: 10px; /* Espacement réduit */
+    }
+  
+    .user-info p {
+      font-size: 12px;
+    }
+  
+    .gmd-flag {
+      font-size: 8px;
+      padding: 1px 4px;
+    }
+  
+    .add-filleul-button {
+      width: 20px;
+      height: 20px;
+      font-size: 14px;
+    }
+  
+    .toggle-button {
+      font-size: 14px;
+    }
+  }
+  /* src/assets/css/MatrixNode.css */
+ 

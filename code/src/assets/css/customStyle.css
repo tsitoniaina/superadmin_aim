@@ -1,0 +1,20 @@
+.input-field {
+    border: 1px solid #ffffff; /* Couleur de la bordure par défaut */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 10px; /* Espace intérieur */
+    font-size: 1rem; /* Taille de la police */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transitions douces sur la bordure et l'ombre */
+  }
+  
+  .input-field:focus {
+    outline: none; /* Pas de bordure supplémentaire quand l'input est sélectionné */
+    border-color: #ffffff; /* Couleur de la bordure au focus */
+    box-shadow: 0 0 5px rgba(247, 247, 247, 0.5); /* Effet d'ombre au focus */
+  }
+  
+  .input-label {
+    font-weight: bold; /* Texte en gras pour l'étiquette */
+    margin-bottom: 5px; /* Espace sous l'étiquette */
+    color: #ffffff; /* Couleur du texte de l'étiquette */
+  }
+  

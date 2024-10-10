@@ -1,0 +1,152 @@
+
+.index-container {
+  background: url('assets/fondEcrant.jpg') center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.sidebar .nav-link {
+  color: #ffffff !important;
+  margin: 5px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 4px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .nav-link:hover {
+  color: #00bfff !important;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .sidebar-footer {
+  position: absolute;
+  bottom: 20px;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* .sidebar-footer {
+  margin-left: 1.5em;
+} */
+.sidebar .sidebar-footer .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar .sidebar-footer .btn .me-2 {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+}
+.fixed-arrow-left {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.text-center {
+  flex-grow: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.index-container {
+  background: url('assets/fondEcrant.jpg') center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.sidebar .nav-link {
+  color: #ffffff !important;
+  margin: 5px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 4px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .nav-link:hover {
+  color: #00bfff !important;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .sidebar-footer {
+  position: absolute;
+  bottom: 20px;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* .sidebar-footer {
+  margin-left: 1.5em;
+} */
+.sidebar .sidebar-footer .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar .sidebar-footer .btn .me-2 {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+}

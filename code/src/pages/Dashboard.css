@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+#project-info {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 16px;
+  font-family: Orbitron, Arial, sans-serif;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+#cta-button {
+  position: absolute;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: Orbitron, Arial, sans-serif;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  transition: opacity 0.5s;
+}
+
+#cta-button:hover {
+  background-color: #0056b3;
+}

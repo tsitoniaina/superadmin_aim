@@ -1,0 +1,22 @@
+/* src/assets/css/MatrixContainer.css */
+
+.matrix-container {
+    padding: 20px;
+    background-color: #F0F2F5;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .matrix-container h1 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  .matrices-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  

@@ -1,0 +1,21 @@
+
+.card {
+  display: flex;
+  max-width: 800px; /* Ajuste la largeur si besoin */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-fluid {
+  width: 50%;
+  object-fit: cover; /* Maintenir les proportions */
+  border-radius: 8px 0 0 8px; /* Arrondir seulement le côté gauche */
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.google-login-button {
+  width: 100%; /* Largeur fixe */
+}
